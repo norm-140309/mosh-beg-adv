@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+ul { padding: 0; margin: 15px 0; }
+.course-item { 
+    line-height: 30px; 
+    padding: 5px; 
+    list-style: none; 
+    vertical-align: middle; 
+}
+.course-item button { float:right; }
+.darken { background-color: #EAEAEA; }
