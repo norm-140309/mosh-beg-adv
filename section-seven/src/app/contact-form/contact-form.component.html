@@ -38,10 +38,10 @@
     </label>
   </div>
   <div class="form-group">
-    <label for="contactMethod">Contact Method</label>
+    <label for="contactMethodSelect">Contact Method</label>
     <select 
       ngModel 
-      name="contactMethod" 
+      name="contactMethodSelect" 
       id="contactMethod" 
       class="form-control"      
     >
@@ -49,6 +49,12 @@
     <option *ngFor="let method of contactMethods" [ngValue]="method">{{ method.name }}</option>
     </select>
   </div>
+  <div class="radio" *ngFor="let method of contactMethods">
+    <label>
+      <input ngModel type="radio" name="contactMethodRadio" [value]="method"> 
+      {{ method.name }}
+    </label>
+  </div>    
   <pre>{{ f.value | json}}</pre>
   <button class="btn btn-primary" [disabled]="!f.valid">
     Submit
