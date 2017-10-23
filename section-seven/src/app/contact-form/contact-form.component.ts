@@ -10,5 +10,7 @@ export class ContactFormComponent {
   log(x) {
     console.log(x);
   }
-
+  submit(f) {
+    console.log('Submitted form:', f);
+  }
 }
